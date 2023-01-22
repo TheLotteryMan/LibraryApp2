@@ -22,8 +22,8 @@ public class LoginPage {
 
     public void login(String userType){// Based on provider user type it will read data
 
-        String username= ConfigurationReader.getProperty(userType+"_username");
-        String password=ConfigurationReader.getProperty("password");
+        String username = ConfigurationReader.getProperty(userType+"_username");
+        String password = ConfigurationReader.getProperty("password");
 
 
         emailBox.sendKeys(username);
@@ -32,11 +32,11 @@ public class LoginPage {
 
     }
 
-    public void login(String email,String password){
-
-        emailBox.sendKeys(email);
-        passwordBox.sendKeys(password);
-        loginButton.click();
-
-    }
+//    public void login(String email,String password){
+//
+//        emailBox.sendKeys(email);
+//        passwordBox.sendKeys(password);
+//        loginButton.click();
+//
+//    }
 }

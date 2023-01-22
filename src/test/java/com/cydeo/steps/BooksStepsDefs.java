@@ -21,7 +21,7 @@ public class BooksStepsDefs {
     @Given("the user logged in as {string}")
     public void the_user_logged_in_as(String user) {
         loginPage.login(user);
-        BrowserUtil.waitFor(4);
+        BrowserUtil.waitFor(2);
 
     }
     @When("the user navigates to {string} page")
